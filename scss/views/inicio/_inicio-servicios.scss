@@ -1,0 +1,81 @@
+
+    /* ---- SECTION SERVICIOS (INICIO) ---- */
+
+.inicio__servicios{
+    padding: 10vw;
+    background-color: $background-light;
+
+    .servicios__items{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border: $style-color solid 5px;
+        padding: 10vw;
+        border-radius: $border-radius;
+
+        .servicios__container{
+            color: $font-color;
+
+            .servicios__icon{
+                font-size: 4rem;
+            }
+
+            .servicios__text{
+                margin: 15px 0 2rem;
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:576px){
+    .inicio__servicios{
+        padding: 5vw 15vw;
+
+        .servicios__items{
+
+            .servicios__container{
+
+                .servicios__icon{
+                    font-size: 5rem;
+                }
+
+                .servicios__text{
+                    font-size: 2rem;
+                }
+            }      
+        }
+    }
+}
+
+@media only screen and (min-width:992px){
+    .inicio__servicios{
+        padding: 3vw 25vw;
+    
+        .servicios__items{
+            padding: 3vw;
+            border-width: 10px;
+            
+            .servicios__desktop{
+                display: flex;
+                justify-content: center;
+
+                .servicios__container{
+                    color: $font-color;
+                    width: 30%;
+        
+                    .servicios__icon{
+                        font-size: 4rem;
+                    }
+        
+                    .servicios__text{
+                        margin: 1vw;
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}

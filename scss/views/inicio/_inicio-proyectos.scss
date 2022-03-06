@@ -1,0 +1,63 @@
+
+    /* ---- SECTION PROYECTOS (INICIO) ---- */
+
+.inicio__proyectos{
+    padding: 10vw;
+    background-color: $background-dark;
+
+    .proyectos__items{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .proyectos__container{
+
+            .proyectos__text{
+                text-align: center;
+                margin: 0.5rem 0 2rem;
+                font-size: 1.2rem;
+                color: $font-color;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:576px){
+    .inicio__proyectos{
+        padding: 5vw 15vw;
+
+        .proyectos__items{
+
+            .proyectos__container{
+
+                .proyectos__text{
+                    font-size: 1.5rem;
+                }
+            }      
+        }
+    }
+}
+
+@media only screen and (min-width:992px){
+    .inicio__proyectos{
+        padding: 3vw 7vw;
+    
+        .proyectos__items{
+
+            .proyectos__desktop{
+                display: flex;
+            }
+    
+            .proyectos__container{
+                margin: 0 1vw;
+
+                .proyectos__text{
+                    text-align: center;
+                    margin: 0.5rem 0 2rem;
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}

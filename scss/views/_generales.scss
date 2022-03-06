@@ -1,0 +1,57 @@
+
+    /* ---- ESTILOS GENERALES ---- */
+
+.sec-title{ /* -- TITULOS SECTION -- */
+    text-align: center;
+    color: $font-color;
+    margin-bottom: 10vw;
+    & h2{
+        font-size: 1.8rem;
+        font-weight: bold;
+    }
+}
+
+.ver-mas{ /* -- BOTON VER MAS -- */
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: $font-color;
+    border-radius: $border-radius;
+    background-color: $style-color;
+    padding: 10px 40px;
+    font-weight: bold;
+}
+
+.img{ /* -- ESTILO IMAGENES -- */
+    width: 100%;
+    height: 100%;
+    border-radius: $border-radius;
+}
+
+@media only screen and (min-width:576px){
+    .sec-title{ /* -- TITULOS SECTION -- */
+        margin-bottom: 5vw;
+        & h2{
+            font-size: 2.5rem;
+        }
+    }
+
+    .ver-mas{ /* -- BOTON VER MAS -- */
+        font-size: 1.5rem;
+        padding: 15px 60px;
+    }
+}
+
+@media only screen and (min-width:992px){
+    .sec-title{ /* -- TITULOS SECTION -- */
+        margin-bottom: 2vw;
+        & h2{
+            font-size: 2rem;
+            font-weight: bold;
+        }
+    }
+
+    .ver-mas{ /* -- BOTON VER MAS -- */
+        font-size: 1rem;
+        padding: 1vw 3vw;
+    }
+}

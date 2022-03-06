@@ -1,0 +1,108 @@
+.us{
+    background: $background-light;
+    padding: 10vw;
+    border-top: $style-color 5px solid;
+
+    .us__item{
+
+        .us__img{
+            margin-bottom: 5vw;
+        }
+
+        .us__container{
+            color: white;
+            text-align: center;
+            margin-bottom: 13vw;
+
+            .us__subtitle{
+                & h3{
+                    font-size: 1.8rem;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:576px){
+    .us{
+        padding: 5vw 15vw;
+
+        .us__img{
+            margin-bottom: 1vw;
+        }
+
+        .us__container{
+            color: white;
+            text-align: center;
+            margin-bottom: 13vw;
+            font-size: 1.3rem;
+        }
+    }
+}
+
+@media only screen and (min-width:992px){
+    .us{
+        padding: 3vw 7vw;
+    }
+    
+    .us__desktop{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .us__item{
+            display: flex;
+            justify-content: space-evenly;
+            margin-bottom: 2vw;
+
+            .us__img{
+                margin-bottom: 1vw;
+                width: 40%;
+            }
+
+            .us__container{
+                height: 100%;
+                width: 50%;
+                padding-top: 7vw;
+                text-align: start;
+
+                .us__subtitle{
+                    & h3{
+                        margin-bottom: 3vw;
+                        font-size: 2rem;
+                    }
+                }
+
+                .us__text{
+                    margin-bottom: 3vw;
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+
+
+    .inicio__nosotros{
+        padding: 3vw 7vw;
+
+        .nosotros__items{
+            flex-direction: row;
+            justify-content: space-evenly;
+    
+            .nosotros__container{
+                margin-bottom: 1vw;
+                width: 40%;
+            }
+            
+            .nosotros__desktop{
+                height: 100%;
+                width: 50%;
+                .nosotros__text{
+                    margin-bottom: 3vw;
+                    font-size: 5rem;
+                }
+
+            }
+        }
+    }
+}
