@@ -195,10 +195,10 @@
                     .form__send{
                         font-size: 1rem;
                         padding: 1vw 0;
+                        transition: all 0.3s;
 
                         &:hover{
-                            transition: all 0.3s;
-                            background: white;
+                            background: $font-color;
                             color: $style-color;
                         }
                     }

@@ -1,0 +1,100 @@
+
+    /* ---- ESTILO PROYECTOS ---- */
+
+.contact{
+    background-color: $background-dark;
+    border-top: 5px $style-color solid;
+
+    .contact__horarios{
+        padding: 10vw;
+        margin: 0;
+    
+        .horarios__horas{
+            text-align: center;
+            color: $font-color;
+            font-size: 1.2rem;
+    
+            .horarios__item{
+                margin-bottom: 2rem;
+            }
+        }
+    }
+    
+    .contact__redes{
+        padding: 0 10vw 10vw;
+        margin: 0;
+        
+        .redes__item{
+            margin-bottom: 1rem;
+            color: white;
+            text-align: center;
+    
+            .redes__icon{
+                font-size: 2rem;
+                color: white;
+                margin-right: 1rem;
+            }
+    
+            .redes__text{
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:576px){
+    .contact__horarios{
+
+        .horarios__horas{
+            font-size: 1.7rem;
+        }
+    }
+
+    .contact__redes{
+
+        .redes__item{
+
+            .redes__icon{
+                font-size: 3rem;
+            }
+
+            .redes__text{
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:992px){
+    .contact{
+
+        .contact__desktop{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .contact__horarios{
+                padding: 0 4vw;
+                margin: 2vw 0;
+                border-right: 5px $style-color solid;
+            }
+
+            .contact__redes{
+                padding: 0 4vw;
+                margin: 2vw 0;
+
+                .redes__item{
+                    text-align: justify;
+                    .redes__icon{
+                        font-size: 3.5rem;
+                        transition: all 0.3s;
+                        
+                        &:hover{
+                            transform: scale(1.2);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

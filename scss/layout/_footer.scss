@@ -55,9 +55,12 @@
                 margin: 0 1vw;
             }
 
-            .footer__icon:hover{
-                transition: all 0.2s;
-                transform: scale(1.3);
+            .footer__icon{
+                transition: all 0.3s;
+
+                &:hover{
+                    transform: scale(1.3);
+                }
             }
         }
     

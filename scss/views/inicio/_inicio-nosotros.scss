@@ -58,7 +58,9 @@
                 height: 100%;
                 width: 50%;
                 .nosotros__text{
-                    display: none;
+                    & p{
+                        font-size: 2rem;
+                    }
                 }
 
             }

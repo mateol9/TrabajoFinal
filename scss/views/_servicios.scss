@@ -1,0 +1,74 @@
+
+    /* ---- ESTILO SERVICIOS ---- */
+
+.service{
+    border-top: $style-color 5px solid;
+    background-color: $background-light;
+    padding: 10vw;
+
+    .service__item{
+        text-align: center;
+        margin-bottom: 3rem;
+
+        .service__icon{
+            color: white;
+            font-size: 5rem;
+        }
+
+        .service__container{
+
+            .service__subtitle{
+                color: $style-color;
+            }
+
+            .service__text{
+                color: white;
+            }
+        }
+    }
+
+    .service__contact{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media only screen and (min-width:576px){
+    .service{
+    
+        .service__item{
+    
+            .service__container{
+    
+                .service__subtitle{
+                    
+                    & h3{
+                        font-size: 2rem;
+                    }
+                }
+    
+                .service__text{
+                    font-size: 1.7rem;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:992px){
+    .service{
+        padding: 2vw 7vw;
+        
+        .service__desktop{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 50px;
+            margin-bottom: 50px;
+
+            .service__item{
+                border: $style-color 3px solid;
+                margin-bottom: 0;
+            }
+        }
+    }
+}

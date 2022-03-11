@@ -53,5 +53,11 @@
     .ver-mas{ /* -- BOTON VER MAS -- */
         font-size: 1rem;
         padding: 1vw 3vw;
+        transition: all 0.3s;
+
+        &:hover{
+            background-color: $font-color;
+            color: $style-color;
+        }
     }
 }

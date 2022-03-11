@@ -139,9 +139,10 @@
         color: white;
         font-size: 3rem;
         margin: 0 1vw; }
-      .footer .footer__media .footer__icon:hover {
-        transition: all 0.2s;
-        transform: scale(1.3); }
+      .footer .footer__media .footer__icon {
+        transition: all 0.3s; }
+        .footer .footer__media .footer__icon:hover {
+          transform: scale(1.3); }
     .footer .footer__copy {
       margin: 0;
       padding: 0;
@@ -196,7 +197,11 @@
   .ver-mas {
     /* -- BOTON VER MAS -- */
     font-size: 1rem;
-    padding: 1vw 3vw; } }
+    padding: 1vw 3vw;
+    transition: all 0.3s; }
+    .ver-mas:hover {
+      background-color: white;
+      color: #e0ac1c; } }
 
 /* ---- SECTION NOSOTROS (INICIO) ---- */
 .inicio__nosotros {
@@ -235,8 +240,8 @@
       .inicio__nosotros .nosotros__items .nosotros__desktop {
         height: 100%;
         width: 50%; }
-        .inicio__nosotros .nosotros__items .nosotros__desktop .nosotros__text {
-          display: none; } }
+        .inicio__nosotros .nosotros__items .nosotros__desktop .nosotros__text p {
+          font-size: 2rem; } }
 
 /* ---- SECTION SERVICIOS (INICIO) ---- */
 .inicio__servicios {
@@ -436,12 +441,13 @@
           box-sizing: border-box; }
         .inicio__contacto .contacto__items .contacto__message .contacto__form .form__send {
           font-size: 1rem;
-          padding: 1vw 0; }
+          padding: 1vw 0;
+          transition: all 0.3s; }
           .inicio__contacto .contacto__items .contacto__message .contacto__form .form__send:hover {
-            transition: all 0.3s;
             background: white;
             color: #e0ac1c; } }
 
+/* ---- ESTILO NOSOTROS ---- */
 .us {
   background: #646464;
   padding: 10vw;
@@ -505,3 +511,138 @@
         .inicio__nosotros .nosotros__items .nosotros__desktop .nosotros__text {
           margin-bottom: 3vw;
           font-size: 5rem; } }
+
+/* ---- ESTILO SERVICIOS ---- */
+.service {
+  border-top: #e0ac1c 5px solid;
+  background-color: #646464;
+  padding: 10vw; }
+  .service .service__item {
+    text-align: center;
+    margin-bottom: 3rem; }
+    .service .service__item .service__icon {
+      color: white;
+      font-size: 5rem; }
+    .service .service__item .service__container .service__subtitle {
+      color: #e0ac1c; }
+    .service .service__item .service__container .service__text {
+      color: white; }
+  .service .service__contact {
+    display: flex;
+    justify-content: center; }
+
+@media only screen and (min-width: 576px) {
+  .service .service__item .service__container .service__subtitle h3 {
+    font-size: 2rem; }
+  .service .service__item .service__container .service__text {
+    font-size: 1.7rem; } }
+
+@media only screen and (min-width: 992px) {
+  .service {
+    padding: 2vw 7vw; }
+    .service .service__desktop {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 50px;
+      margin-bottom: 50px; }
+      .service .service__desktop .service__item {
+        border: #e0ac1c 3px solid;
+        margin-bottom: 0; } }
+
+/* ---- ESTILO PROYECTOS ---- */
+.gallery {
+  padding: 10vw;
+  background-color: #646464;
+  border-top: #e0ac1c 5px solid; }
+  .gallery .gallery__container {
+    margin-bottom: 20px;
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden; }
+    .gallery .gallery__container .gallery__text {
+      font-size: 1rem;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+      color: white;
+      padding: 5px;
+      margin: 0;
+      background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.9)); }
+
+@media only screen and (min-width: 576px) {
+  .gallery .gallery__container {
+    margin-bottom: 50px; }
+    .gallery .gallery__container .gallery__text {
+      font-size: 1.7rem;
+      padding: 10px; } }
+
+@media only screen and (min-width: 992px) {
+  .gallery {
+    padding: 2vw 7vw; }
+    .gallery .gallery__desktop {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px; }
+      .gallery .gallery__desktop .gallery__container {
+        margin-bottom: 0; }
+        .gallery .gallery__desktop .gallery__container .img {
+          object-fit: cover; }
+        .gallery .gallery__desktop .gallery__container .gallery__text {
+          font-size: 1.7rem;
+          padding: 10px; } }
+
+/* ---- ESTILO PROYECTOS ---- */
+.contact {
+  background-color: #3c3c3c;
+  border-top: 5px #e0ac1c solid; }
+  .contact .contact__horarios {
+    padding: 10vw;
+    margin: 0; }
+    .contact .contact__horarios .horarios__horas {
+      text-align: center;
+      color: white;
+      font-size: 1.2rem; }
+      .contact .contact__horarios .horarios__horas .horarios__item {
+        margin-bottom: 2rem; }
+  .contact .contact__redes {
+    padding: 0 10vw 10vw;
+    margin: 0; }
+    .contact .contact__redes .redes__item {
+      margin-bottom: 1rem;
+      color: white;
+      text-align: center; }
+      .contact .contact__redes .redes__item .redes__icon {
+        font-size: 2rem;
+        color: white;
+        margin-right: 1rem; }
+      .contact .contact__redes .redes__item .redes__text {
+        font-size: 1rem; }
+
+@media only screen and (min-width: 576px) {
+  .contact__horarios .horarios__horas {
+    font-size: 1.7rem; }
+  .contact__redes .redes__item .redes__icon {
+    font-size: 3rem; }
+  .contact__redes .redes__item .redes__text {
+    font-size: 1.5rem; } }
+
+@media only screen and (min-width: 992px) {
+  .contact .contact__desktop {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .contact .contact__desktop .contact__horarios {
+      padding: 0 4vw;
+      margin: 2vw 0;
+      border-right: 5px #e0ac1c solid; }
+    .contact .contact__desktop .contact__redes {
+      padding: 0 4vw;
+      margin: 2vw 0; }
+      .contact .contact__desktop .contact__redes .redes__item {
+        text-align: justify; }
+        .contact .contact__desktop .contact__redes .redes__item .redes__icon {
+          font-size: 3.5rem;
+          transition: all 0.3s; }
+          .contact .contact__desktop .contact__redes .redes__item .redes__icon:hover {
+            transform: scale(1.2); } }
