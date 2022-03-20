@@ -1,38 +1,47 @@
 
     /* ---- SECTION PROYECTOS (INICIO) ---- */
 
-.inicio__proyectos{
-    padding: 10vw;
+.homeProjects{
+    padding: 0 10vw 10vw;
     background-color: $background-dark;
 
-    .proyectos__items{
+    .homeProjects__title{
+        @include title;
+    }
+
+    .homeProjects__items{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
 
-        .proyectos__container{
+        .homeProjects__container{
+            font-size: 1rem;
 
-            .proyectos__text{
+            .homeProjects__text{
                 text-align: center;
-                margin: 0.5rem 0 2rem;
-                font-size: 1.2rem;
+                margin: 5px 0 30px;
+                font-size: 2em;
                 color: $font-color;
             }
+        }
+
+        .homeProjects__btn{
+            @include btn;
         }
     }
 }
 
 @media only screen and (min-width:576px){
-    .inicio__proyectos{
-        padding: 5vw 15vw;
+    .homeProjects{
 
-        .proyectos__items{
+        .homeProjects__items{
 
-            .proyectos__container{
+            .homeProjects__container{
 
-                .proyectos__text{
-                    font-size: 1.5rem;
+                .homeProjects__text{
+                    font-size: 3em;
+                    margin-bottom: 50px;
                 }
             }      
         }
@@ -40,22 +49,36 @@
 }
 
 @media only screen and (min-width:992px){
-    .inicio__proyectos{
-        padding: 3vw 7vw;
+    .homeProjects{
+        padding: 0 10vw 5vw;
     
-        .proyectos__items{
+        .homeProjects__items{
 
-            .proyectos__desktop{
+            .homeProjects__desktop{
                 display: flex;
             }
     
-            .proyectos__container{
+            .homeProjects__container{
                 margin: 0 1vw;
 
-                .proyectos__text{
+                .homeProjects__picture{
+                    background-color: black;
+                    border-radius: $border-radius;
+
+                    .index__img{
+                        opacity: 0.5;
+                        transition: all 0.5s;
+
+                        &:hover{
+                            opacity: 1;
+                        }
+                    }
+                }
+
+                .homeProjects__text{
                     text-align: center;
-                    margin: 0.5rem 0 2rem;
-                    font-size: 1rem;
+                    margin: 5px 0 30px;
+                    font-size: 2em;
                 }
             }
         }

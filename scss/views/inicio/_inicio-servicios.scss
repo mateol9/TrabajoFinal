@@ -1,49 +1,57 @@
 
     /* ---- SECTION SERVICIOS (INICIO) ---- */
 
-.inicio__servicios{
-    padding: 10vw;
+.homeServices{
+    padding: 0 10vw 10vw;
     background-color: $background-light;
 
-    .servicios__items{
+    .homeServices__title{
+        @include title;
+    }
+
+    .homeServices__items{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
-        border: $style-color solid 5px;
+        border: $style-color solid 3px;
         padding: 10vw;
         border-radius: $border-radius;
 
-        .servicios__container{
+        .homeServices__container{
             color: $font-color;
+            font-size: 2rem;
 
-            .servicios__icon{
-                font-size: 4rem;
+            .homeServices__icon{
+                font-size: 3em;
             }
 
-            .servicios__text{
+            .homeServices__text{
                 margin: 15px 0 2rem;
-                font-size: 1.5rem;
+                font-size: 1em;
             }
+        }
+
+        .homeServices__btn{
+            @include btn;
         }
     }
 }
 
 @media only screen and (min-width:576px){
-    .inicio__servicios{
-        padding: 5vw 15vw;
+    .homeServices{
 
-        .servicios__items{
+        .homeServices__items{
 
-            .servicios__container{
+            .homeServices__container{
 
-                .servicios__icon{
-                    font-size: 5rem;
+                .homeServices__icon{
+                    font-size: 5em;
                 }
 
-                .servicios__text{
-                    font-size: 2rem;
+                .homeServices__text{
+                    font-size: 1.5em;
                 }
             }      
         }
@@ -51,28 +59,27 @@
 }
 
 @media only screen and (min-width:992px){
-    .inicio__servicios{
-        padding: 3vw 25vw;
-    
-        .servicios__items{
+    .homeServices{
+        padding: 0 10vw 5vw;
+
+        .homeServices__items{
             padding: 3vw;
-            border-width: 10px;
             
-            .servicios__desktop{
+            .homeServices__desktop{
                 display: flex;
                 justify-content: center;
 
-                .servicios__container{
+                .homeServices__container{
                     color: $font-color;
-                    width: 30%;
+                    width: 50%;
         
-                    .servicios__icon{
-                        font-size: 4rem;
+                    .homeServices__icon{
+                        font-size: 4em;
                     }
         
-                    .servicios__text{
+                    .homeServices__text{
                         margin: 1vw;
-                        font-size: 1rem;
+                        font-size: 1em;
                     }
                 }
             }

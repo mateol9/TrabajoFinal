@@ -15,15 +15,16 @@
         text-align: center;
 
         .header__container{
-            background: rgba(50,50,50,0.4);
+            background: $background-header-title;
             width: 100%;
+            font-size: 2rem;
+            padding: 5vw;
 
             .header__title{
-                margin: 5vw;
                 color: white;
                 
                 & h1{
-                    font-size: 1.7rem;
+                    font-size: 2.5em;
                 }
 
                 .style-title{
@@ -36,9 +37,8 @@
             }
 
             .header__text{
-                margin: 5vw;
                 color: white;
-                font-size: 1.2rem;
+                font-size: 1em;
             }
         }
     }
@@ -50,16 +50,17 @@
         .header__background{
 
             .header__container{
+                padding: 3vw;
     
                 .header__title{
                     
                     & h1{
-                        font-size: 2.5rem;
+                        font-size: 4em;
                     }
                 }
     
                 .header__text{
-                    font-size: 1.5rem;
+                    font-size: 1.2em;
                 }
             }
         }
@@ -71,23 +72,19 @@
     
         .header__background{
             background-image: url(../assets/img/header-background.jpg);
-            display: flex;
     
             .header__container{
-                width: 100%;
+                padding: 1vw;
 
                 .header__title{
-                    margin: 2vw;
-                    color: white;
                     
                     & h1{
-                        font-size: 3vw;
+                        font-size: 4em;
                     }
                 }
     
                 .header__text{
-                    margin: 2vw;
-                    font-size: 1.5vw;
+                    font-size: 1.3em;
                 }
             }
         }

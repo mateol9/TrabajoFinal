@@ -1,11 +1,15 @@
 
     /* ---- SECTION CONTACTO (INICIO) ---- */
 
-.inicio__contacto{
-    padding: 10vw;
+.contact__title{
+    @include title;
+}
+
+.contact__box{
+    padding: 0 10vw 10vw;
     background-color: $background-light;
 
-    .contacto__items{
+    .contact__items{
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -13,59 +17,63 @@
         text-align: center;
         border-radius: $border-radius;
         
-        .contacto__container{
+        .contact__container{
             margin-bottom: 5vw;
             border-bottom: 5px $style-color solid;
+            font-size: 1rem;
 
-            .contacto__info{
-                font-size: 1.2rem;
+            .contact__info{
                 color: $font-color;
-                margin-bottom: 5vw;
+                margin-bottom: 20px;
+                font-size: 2em;
 
-                .contacto__text{
+                .contact__text{
                     margin: 0;
                 }
-                .contacto__text:first-child{
-                    font-size: 1.5rem;
+                .contact__text:first-child{
+                    font-size: 1.4em;
                 }
 
-                .contacto__text-s{
+                .contact__text-s{
                     color: $style-color;
                     text-decoration: none;
                 }
             }
         }
 
-        .contacto__message{
-            
+        .contact__message{
+            font-size: 1rem;
+
             .message__text{
-                font-size: 1.2rem;
+                font-size: 2em;
                 text-align: center;
                 color: $style-color;
 
                 & h3{
-                font-size: 1.7rem;
+                font-size: 1.4em;
                 color: $font-color;
                 }
             }
 
-            .contacto__form{
+            .contact__form{
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                font-size: 1rem;
 
                 .form__input{
                     width: 100%;
-                    padding: 10px;
+                    padding: 15px;
                     margin-bottom: 15px;
                     border: none;
                     background-color: $background-dark;
                     color: $font-color;
                     border-radius: $border-radius;
+                    font-size: 1.5em;
 
                     &:focus{
-                        background-color: rgb(30, 30, 30);
+                        background-color: $background-nav;
                     }
                 }
 
@@ -74,16 +82,8 @@
                     height: 150px;
                 }
 
-                .form__send{
-                    border: none;
-                    width: 100%;
-                    background-color: $style-color;
-                    text-decoration: none;
-                    color: $font-color;
-                    font-size: 1.2rem;
-                    font-weight: bold;
-                    padding: 10px 0;
-                    border-radius: $border-radius;
+                .contact__btn{
+                    @include btn($width: 100%, $padding: 10px 0);
                 }
             }
         }
@@ -91,47 +91,43 @@
 }
 
 @media only screen and (min-width:576px){
-    .inicio__contacto{
-        padding: 5vw 15vw;
+    .contact__box{
 
-        .contacto__items{
+        .contact__items{
 
-            .contacto__container{
+            .contact__container{
 
-                .contacto__info{
-                    font-size: 1.5rem;
+                .contact__info{
+                    font-size: 3em;
 
-                    .contacto__text:first-child{
-                        font-size: 2rem;
+                    .contact__text:first-child{
+                        font-size: 1.3em;
                     }
                 }
             }
 
-            .contacto__message{
+            .contact__message{
 
                 .message__text{
-                    font-size: 1.5rem;
+                    font-size: 3em;
+                    margin-bottom: 40px;
     
                     & h3{
-                    font-size: 2rem;
+                    font-size: 1.3em;
                     color: $font-color;
                     }
                 }
 
-                .contacto__form{
+                .contact__form{
                     
                     .form__input{
                         width: 80vw;
-                        font-size: 1.2rem;
+                        font-size: 2.5em;
+                        padding: 20px;
                     }
     
                     .form__textarea{
                         height: 200px;
-                    }
-    
-                    .form__send{
-                        font-size: 1.5rem;
-                        padding: 15px 0;
                     }
                 }
             }
@@ -143,64 +139,53 @@
     
     /* ---- SECTION CONTACTO (INICIO) ---- */
 
-    .inicio__contacto{
-        padding: 3vw 7vw;
+    .contact__box{
+        padding: 0 7vw 3vw;
 
-        .contacto__items{
+        .contact__items{
             flex-direction: row;
             background-color: $background-dark;
             padding: 2vw;
             
-            .contacto__container{
+            .contact__container{
                 margin-bottom: 0;
                 border: none;
                 margin-right: 10vw;
 
-                .contacto__info{
-                    font-size: 1rem;
+                .contact__info{
+                    font-size: 2em;
                     margin-bottom: 1vw;
 
-                    .contacto__text{
+                    .contact__text{
                         margin: 0;
                     }
-                    .contacto__text:first-child{
-                        font-size: 2rem;
+                    .contact__text:first-child{
+                        font-size: 1.2em;
                     }
                 }
             }
 
-            .contacto__message{
+            .contact__message{
                 width: 40%;
+
                 .message__text{
-                    font-size: 1rem;
+                    font-size: 2em;
                     margin-bottom: 2vw;
 
                     & h3{
-                    font-size: 2rem;
+                    font-size: 1.2em;
                     }
                 }
 
-                .contacto__form{
+                .contact__form{
 
                     .form__input{
                         width: 100%;
-                        padding: 0.5vw;
-                        margin-bottom: 15px;
+                        padding: 15px;
                         border: none;
-                        font-size: 1rem;
+                        font-size: 1.5em;
                         background: $background-light;
                         box-sizing: border-box;
-                    }
-
-                    .form__send{
-                        font-size: 1rem;
-                        padding: 1vw 0;
-                        transition: all 0.3s;
-
-                        &:hover{
-                            background: $font-color;
-                            color: $style-color;
-                        }
                     }
                 }
             }

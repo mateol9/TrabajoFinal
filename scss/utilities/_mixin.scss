@@ -1,0 +1,47 @@
+
+    /* ---- MIXINS ---- */
+
+@mixin btn($width:auto, $padding:10px 40px){
+    width: $width;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: $style-color;
+    color: $font-color;
+    border: none;
+    border-radius: $border-radius;
+    padding: $padding;
+    transition: all 0.3s;
+
+    &:hover{
+        background-color: $font-color;
+        color: $style-color;
+    }
+
+    @media only screen and (min-width:576px){
+        font-size: 3rem;
+    }
+
+    @media only screen and (min-width:992px){
+        font-size: 3rem;
+    }
+}
+
+@mixin title(){
+    text-align: center;
+    color: $font-color;
+    padding: 10vw 0;
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+
+    @media only screen and (min-width:576px){
+        font-size: 5rem;
+        padding: 7vw 0;
+    }
+
+    @media only screen and (min-width:992px){
+        font-size: 5rem;
+        padding: 3vw 0;
+    }
+}

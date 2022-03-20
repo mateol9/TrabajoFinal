@@ -1,19 +1,24 @@
 
     /* ---- ESTILO PROYECTOS ---- */
 
-.gallery{
-    padding: 10vw;
+.projects{
+    padding: 0 10vw 10vw;
     background-color: $background-light;
     border-top: $style-color 5px solid;
 
-    .gallery__container{
+    .projects__title{
+        @include title;
+    }
+
+    .projects__container{
         margin-bottom: 20px;
         position: relative;
         border-radius: $border-radius;
         overflow: hidden;
+        font-size: 1rem;
 
-        .gallery__text{
-            font-size: 1rem;
+        .projects__text{
+            font-size: 1.7em;
             position: absolute;
             bottom: 0;
             width: 100%;
@@ -27,13 +32,13 @@
 }
 
 @media only screen and (min-width:576px){
-    .gallery{
+    .projects{
     
-        .gallery__container{
+        .projects__container{
             margin-bottom: 50px;
     
-            .gallery__text{
-                font-size: 1.7rem;
+            .projects__text{
+                font-size: 3em;
                 padding: 10px;
             }
         }
@@ -41,23 +46,28 @@
 }
 
 @media only screen and (min-width:992px){
-    .gallery{
-        padding: 2vw 7vw;
+    .projects{
+        padding: 0 7vw 3vw;
 
-        .gallery__desktop{
+        .projects__desktop{
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 20px;
 
-            .gallery__container{
+            .projects__container{
                 margin-bottom: 0;
+                transition: all 0.3s;
+
+                &:hover{
+                    transform: rotate(2deg);
+                }
     
                 .img{
                     object-fit: cover;
                 }
         
-                .gallery__text{
-                    font-size: 1.7rem;
+                .projects__text{
+                    font-size: 2em;
                     padding: 10px;
                 }
             }

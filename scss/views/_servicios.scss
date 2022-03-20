@@ -1,54 +1,64 @@
 
     /* ---- ESTILO SERVICIOS ---- */
 
-.service{
+.services{
     border-top: $style-color 5px solid;
     background-color: $background-light;
-    padding: 10vw;
+    padding: 0 10vw 10vw;
 
-    .service__item{
+    .services__title{
+        @include title;
+    }
+
+    .services__item{
         text-align: center;
-        margin-bottom: 3rem;
+        margin-bottom: 30px;
+        font-size: 2rem;
 
-        .service__icon{
+        .services__icon{
             color: white;
-            font-size: 5rem;
+            font-size: 5em;
         }
 
-        .service__container{
+        .services__container{
+            font-size: 1rem;
 
-            .service__subtitle{
+            .services__subtitle{
                 color: $style-color;
+                font-size: 3em;
             }
 
-            .service__text{
+            .services__text{
                 color: white;
+                font-size: 1.5em;
             }
         }
     }
 
-    .service__contact{
+    .services__contact{
         display: flex;
         justify-content: center;
+
+        .services__btn{
+            @include btn;
+        }
     }
 }
 
 @media only screen and (min-width:576px){
-    .service{
+    .services{
     
-        .service__item{
+        .services__item{
     
-            .service__container{
+            .services__container{
     
-                .service__subtitle{
+                .services__subtitle{
                     
-                    & h3{
-                        font-size: 2rem;
-                    }
+                    font-size: 4em;
                 }
     
-                .service__text{
-                    font-size: 1.7rem;
+                .services__text{
+                    font-size: 2.5em;
                 }
             }
         }
@@ -56,16 +66,16 @@
 }
 
 @media only screen and (min-width:992px){
-    .service{
-        padding: 2vw 7vw;
+    .services{
+        padding: 0 7vw 3vw;
         
-        .service__desktop{
+        .services__desktop{
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 50px;
             margin-bottom: 50px;
 
-            .service__item{
+            .services__item{
                 border: $style-color 3px solid;
                 margin-bottom: 0;
             }

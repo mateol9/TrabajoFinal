@@ -3,40 +3,54 @@
 .navbar{
     margin: 15px;
     padding: 10vw;
-    background: rgb(150, 150, 150);
+    background: $background-nav;
     border-radius: $border-radius;
 
-    .navbar__logo{
-        font-size: 2.5rem;
-        color: $style-color;
+    .navbar__container{
+        height: 60px;
+        width: 100%;
+        font-size: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
 
-        &:hover{
+        .navbar__logo{
+            font-size: 3em;
+            color: $style-color;
             transition: all 0.3s;
-            transform: scale(1.2);
+    
+            &:hover{
+                transform: scale(1.2);
+            }
+        }
+    
+        .navbar__bars{
+            color: $style-color;
+            font-size: 2.5em;
         }
     }
 
-    .navbar__bars{
-        color: $style-color;
-        font-size: 2rem;
-    }
-
     .navbar-nav{
-        padding: 3vw 0;
+        padding: 30px 0;
+        font-size: 2rem;
 
         .nav-item{
-            font-size: 1.5rem;
-            border-bottom: 4px white solid;
+            font-size: 1em;
+            border-bottom: 1px white solid;
             text-align: center;
 
-            &-active{
-                font-weight: bold;
-                border-color: $style-color;
-            }
-
-            .nav__text{
+            .nav-link{
                 color: white;
+                font-weight: bold;
+
+                &-active{
+                    color: $style-color;
+                }
             }
+        }
+
+        .nav-item-top{
+            border-top: 1px white solid;
         }
         
     }
@@ -44,32 +58,26 @@
 
 @media only screen and (min-width:992px){
     .navbar{
-        margin: 15px;
-        padding: 10vw;
-    
-        .navbar__logo{
-            font-size: 3rem;
-        }
     
         .navbar-nav{
-            padding: 5px;
-            margin-left: 300px; /**/
+            padding: 10px;
+            align-items: center;
     
             .nav-item{
-                font-size: 1rem;
                 border: none;
-                margin: 0 10px;
-                box-sizing: border-box;
+                margin: 0 15px;
+                white-space: nowrap;
 
-                .nav__text{
+                .nav-link{
+                    transition: all 0.2s;
 
                     &-active{
                         color: $style-color;
                     }
 
                     &:hover{
-                        transition: all 0.2s;
-                        border-bottom: 4px $style-color solid;
+                        transform: scale(1.1);
+                        color: $style-color;
                     }
                 }
             }

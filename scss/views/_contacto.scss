@@ -5,61 +5,60 @@
     background-color: $background-dark;
     border-top: 5px $style-color solid;
 
-    .contact__horarios{
-        padding: 10vw;
+    .contact__schedule{
+        padding: 0 10vw;
         margin: 0;
     
-        .horarios__horas{
+        .contact__timetable{
             text-align: center;
             color: $font-color;
-            font-size: 1.2rem;
+            font-size: 1rem;
     
-            .horarios__item{
-                margin-bottom: 2rem;
+            .contact__time{
+                font-size: 1.8em;
+                margin-bottom: 15px;
             }
         }
     }
     
-    .contact__redes{
+    .contact__social{
         padding: 0 10vw 10vw;
         margin: 0;
         
-        .redes__item{
+        .contact__item{
             margin-bottom: 1rem;
             color: white;
+            font-size: 1rem;
             text-align: center;
     
-            .redes__icon{
-                font-size: 2rem;
+            .contact__icon{
+                font-size: 3em;
                 color: white;
-                margin-right: 1rem;
+                margin-right: 15px;
             }
     
-            .redes__text{
-                font-size: 1rem;
+            .contact__text{
+                font-size: 1.8em;
             }
         }
     }
 }
 
 @media only screen and (min-width:576px){
-    .contact__horarios{
 
-        .horarios__horas{
-            font-size: 1.7rem;
-        }
-    }
+    .contact{
 
-    .contact__redes{
+        .contact__schedule{
 
-        .redes__item{
-
-            .redes__icon{
-                font-size: 3rem;
+            .contact__timetable{
+                font-size: 1.8rem;
             }
-
-            .redes__text{
-                font-size: 1.5rem;
+        }
+    
+        .contact__social{
+    
+            .contact__item{
+                font-size: 1.8rem;
             }
         }
     }
@@ -71,22 +70,27 @@
         .contact__desktop{
             display: flex;
             justify-content: center;
-            align-items: center;
 
-            .contact__horarios{
+            .contact__schedule{
                 padding: 0 4vw;
                 margin: 2vw 0;
                 border-right: 5px $style-color solid;
+                height: 100%;
+
+                .contact__timetable{
+                    font-size: 1.2rem;
+                }
             }
 
-            .contact__redes{
+            .contact__social{
                 padding: 0 4vw;
                 margin: 2vw 0;
+                height: 100%;
 
-                .redes__item{
-                    text-align: justify;
-                    .redes__icon{
-                        font-size: 3.5rem;
+                .contact__item{
+                    font-size: 1.2rem;
+                    
+                    .contact__icon{
                         transition: all 0.3s;
                         
                         &:hover{
