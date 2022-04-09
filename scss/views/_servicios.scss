@@ -10,7 +10,19 @@
         @include title;
     }
 
+    .services__info{
+        background-color: $background-dark;
+        color: white;
+        font-size: 2em;
+        text-align: center;
+        padding: 20px;
+        border: $border-style;
+        border-radius: $border-radius;
+    }
+
     .services__item{
+        border-radius: $border-radius;
+        padding: 10px 0;
         text-align: center;
         margin-bottom: 30px;
         font-size: 2rem;
@@ -33,6 +45,16 @@
                 font-size: 1.5em;
             }
         }
+
+        &:nth-child(2){
+            background-color: $background-dark;
+        }
+        &:nth-child(4){
+            background-color: $background-dark;
+        }
+        &:nth-child(6){
+            background-color: $background-dark;
+        }
     }
 
     .services__contact{
@@ -48,6 +70,10 @@
 @media only screen and (min-width:576px){
     .services{
     
+        .services__info{
+            font-size: 2.5em;
+        }
+
         .services__item{
     
             .services__container{
@@ -69,15 +95,20 @@
     .services{
         padding: 0 7vw 3vw;
         
+        .services__info{
+            margin-bottom: 50px;
+        }
+
         .services__desktop{
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
             gap: 50px;
             margin-bottom: 50px;
 
             .services__item{
-                border: $style-color 3px solid;
+                padding: 0 25px;
                 margin-bottom: 0;
+                background-color: $background-dark;;
             }
         }
     }

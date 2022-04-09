@@ -1,8 +1,9 @@
+    
     /* ---- NAV ---- */
 
 .navbar{
     margin: 15px;
-    padding: 10vw;
+    padding: 0 15px;
     background: $background-nav;
     border-radius: $border-radius;
 
@@ -56,12 +57,43 @@
     }
 }
 
+@media only screen and (min-width:576px){
+    .navbar{
+        padding: 10px 50px;
+
+        .navbar__container{
+
+            .navbar__logo{
+                font-size: 3.5em;
+                color: $style-color;
+                transition: all 0.3s;
+        
+                &:hover{
+                    transform: scale(1.2);
+                }
+            }
+        
+            .navbar__bars{
+                color: $style-color;
+                font-size: 3em;
+            }
+        }
+
+        .navbar-nav{
+            padding: 30px 0;
+            font-size: 3rem;
+        }
+    }
+}
+
 @media only screen and (min-width:992px){
     .navbar{
-    
+        padding: 8px 100px;
+
         .navbar-nav{
             padding: 10px;
             align-items: center;
+            font-size: 2rem;
     
             .nav-item{
                 border: none;
